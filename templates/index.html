@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.84.0" />
+
+    <link rel="icon" href="{{url_for('static', filename='images/logo.jpg')}}" />
+
+    <title>Home - Employee Churn Prediction System</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='css/predictor.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='css/index.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="pt-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 col-xs-6 pt-1 head">
+            <a href="/">Employee Churn Prediction System</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="btn btn-sm btn-outline-secondary mx-1 emp-bg" href="/"
+              >Home</a
+            >
+            <a
+              class="btn btn-sm btn-outline-secondary mx-1 emp-bg"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="btn btn-sm btn-outline-secondary mx-1 emp-bg"
+              href="/predictor"
+              >Predictor</a
+            >
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <hr />
+
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 mt-4 text-white rounded emp-bg">
+        <div class="col-md-12 px-0">
+          <h1 class="display-4 fst-italic">
+            Employee Churn is defined as the percentage of employees leaving an
+            organization over a specific period of time.
+          </h1>
+          <p class="lead my-3">
+            The churn rate is frequently referred to as employee attrition rate
+            or employee turnover rate. Employee churn rate indicates how
+            frequently the company’s employees quit their jobs within a given
+            period. Note that employee churn rates can significantly vary among
+            companies and industries.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative m-2 emp-card"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">Major Factors Contributing To Employee Churn -</h3>
+              <br>
+              <p class="card-text mb-auto">
+                <ul class="mx-4">
+                  <li>Lack Of Growth Plan And Opportunities</li>
+                  <li>Skewed Work-Life Balance</li>
+                  <li>Bad Workplace Culture</li>
+                  <li>Dissatisfactory Appraisals</li>
+                  <li>Low Staff Morale</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 m-2 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static mb-3">
+              <h3 class="mb-0">Did You Know ?</h3>
+              <br>
+              <p class="mb-auto">
+                According to the Society of Human Resources Management's (SHRM) 2018 Employee Recognition Report, employee churn is the number one challenge for most organizations globally. A staggering 29% of these organizations admitted to being stressed about finding replacements. Although a certain level of employee turnover is normal in any organization, however, high rates of employee churn can be a costly affair.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 text-center mb-4"><a class="btn btn-secondary button-predict border shadow-lg" type="button" href="/predictor">Predict Now</a></div>
+
+      <div class="row g-5">
+        <div class="col-md-12" id="about">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-light rounded">
+              <h4 class="fst-italic text-center">About</h4>
+              <br>
+              <p class="mb-0">
+                In today's world, many organizations focus on maintaining their
+                reputation, business standards and performance. So to achieve
+                this, they first train their newly joined employees and spend
+                huge amount on these trainings. But usually most of these
+                employees switch their jobs within a short span of joining. In
+                most cases employees with niche skills are harder to replace.
+                This affects the ongoing work and productivity of existing
+                employees. Again acquiring new employees as a replacement has
+                its huge costs such as hiring costs and training costs. Also,
+                the new employee will take time to learn skills to be at par of
+                technical or business expertise knowledge of the older employee.
+                Organizations can simply tackle this problem by applying Machine
+                Learning techniques to predict employee churn, which helps them
+                in taking necessary actions such as negotiating with the
+                employees, mentoring and guiding to retain them.
+              </p>
+              <br>
+              <p class="mb-0">
+                This project aims to solve the above mentioned problem by using
+                Azure Machine Learning Service. It uses Two-Class Decision
+                Forest module to create a machine learning model based on the
+                random decision forests algorithm. The accuracy of this ML model
+                is 98.70%. The input data is passed to the ML Model Web Service and
+                the model evaluates the data and sends back the prediction of
+                whether the employee will leave the company or not. In this
+                way, the organizations can take necessary actions for the
+                employees who are on the verge of leaving the company.
+              </p>
+              <br>
+              <p class="mb-0 text-center">
+                Developed By Ritik Jain
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <hr />
+
+    <footer>
+      <div class="top">
+        <p>&copy; 2022 RJ. All Rights Reserved.</p>
+        <a href="/" class="fw-bold">Back To Top</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
