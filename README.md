@@ -35,4 +35,15 @@ This project aims to solve the above mentioned problem by using Azure Machine Le
 - HTML, CSS, Bootstrap
 - Flask (Python)
 
+## Outputs
+
+![image](https://user-images.githubusercontent.com/85997443/157715624-76a144b4-6b34-4973-9dbc-64b2f333152a.png)
+
+![image](https://user-images.githubusercontent.com/85997443/157715698-7ddc2701-06a6-4f80-9883-2b735b803f8a.png)
+
+![image](https://user-images.githubusercontent.com/85997443/157715733-a3e88355-b469-48f1-b008-b358ce182e3c.png)
+
+![image](https://user-images.githubusercontent.com/85997443/157715806-c9ed4854-fc1b-4bc7-adaf-4054ab1f2c2c.png)
+
+
 ## Thank You For Reading!
